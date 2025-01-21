@@ -47,14 +47,14 @@ namespace task_20_1
             {
                 
                 int counter = 0;
-                for (int j = 2; j <= i; j++)
+                for (int j = 2; j < i; j++)
                 {
                     if ((i % j) == 0)
                     {
                         counter++;
                     }
                 }
-                if (counter == 1)
+                if (counter == 0)
                 {
                     Console.WriteLine(i);
 
