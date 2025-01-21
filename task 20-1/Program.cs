@@ -45,16 +45,24 @@ namespace task_20_1
             
             for (int i = n1;i <= n2; i++)
             {
-                
+                if (i ==2 || i==3 || i ==5)
+                {
+                    Console.WriteLine(i);
+                }
+                if ((i % 2) == 0 || (i%5 ==0) || (i % 3 == 0) )
+                {
+                    continue;
+                }
+
                 int counter = 0;
-                for (int j = 2; j < i; j++)
+                for (int j = 2; j <= i; j++)
                 {
                     if ((i % j) == 0)
                     {
                         counter++;
                     }
                 }
-                if (counter == 0)
+                if (counter == 1)
                 {
                     Console.WriteLine(i);
 
