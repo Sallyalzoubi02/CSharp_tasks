@@ -70,6 +70,7 @@ namespace task_21_1
 
         
         public void GetDetails() // dispaly the data of object
+
         {
             Console.WriteLine($"{this.Name},{this.StudentId},{this.Age},{this.Email}");
         }
